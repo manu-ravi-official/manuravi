@@ -1,0 +1,223 @@
+1 . #include<iostream>
+using namespace std;
+ int main()
+ {
+ int a,b;
+ cout<<"enter two numbers :";
+ cin>>a>>b;
+ cout<<"sum = " << a+b;
+ return 0;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+2.#include<iostream>
+#define pi 3.14 
+using namespace std;
+ int main()
+ {
+ float r,area;
+ cout<<"enter radius of circle :";
+ cin>>r;
+ area = pi*(r*r);
+ cout<<"Area = "<<area;
+ return 0;
+ }
+
+
+
+
+
+
+
+
+
+
+
+3.#include<iostream>
+using namespace std;
+int main()
+{
+int n;
+cout<<"enter a number :";
+cin>>n;
+if(n%7==0)
+{
+	cout<<"The number is divisible by 7 ";
+}
+else
+{
+		cout<<"The number is not divisible by 7 ";
+}
+return 0;
+}
+
+
+
+
+
+
+
+
+
+4.#include<iostream>
+using namespace  std;
+int main()
+{
+int mark;
+cout<<"enter mark of the student :";
+cin>>mark;
+if(mark>=90)
+	cout<<"S";
+	else if(mark>80)
+		cout<<"A";
+		else if(mark>70)
+			cout<<"B";
+			else if(mark>60)
+				cout<<"C";
+				else if(mark>50)
+					cout<<"D";
+					else if(mark>40)
+						cout<<"E";
+						else
+							cout<<"failed";															
+return 0;
+}			
+
+
+
+
+
+
+
+
+5.#include<iostream>
+using namespace std;
+int main()
+{
+int month;
+cout<<"enter a number : ";
+cin>>month;
+switch(month)
+{
+
+
+	case  1 :
+	  cout<<"january";
+	  break;
+	  
+	  case  2 :
+	  cout<<"february";
+	  break;
+	  
+	  case  3:
+	  cout<<"march";
+	  break;
+	  
+	  case  4 :
+	  cout<<"april";
+	  break;
+	  
+	  case  5 :
+	  cout<<"may";
+	  break;
+	  
+	  case  6 :
+	  cout<<"june";
+	  break;
+	  
+	  case  7 :
+	  cout<<"july";
+	  break;
+	  
+	  case  8 :
+	  cout<<"august";
+	  break;
+	  
+	  case  9 :
+	  cout<<"september";
+	  break;
+	  
+	  case  10:
+	  cout<<"october";
+	  break;
+	  
+	  case  11 :
+	  cout<<"november";
+	  break;
+	  
+	   case  12 :
+	  cout<<"december";
+	  break;
+default :
+		cout<<"invalid";
+}  
+ return 0;
+ }
+
+
+
+
+
+
+
+
+
+
+6.#include<iostream>
+using namespace std;
+ int main()
+ {
+ int num;
+ cout<<"enter a number:";
+ cin>>num;
+ for(int i=1;i<=10;i++)
+	cout<<i<<"*"<<num<<"="<<i*num<<"\n";
+	
+	
+return 0;
+}
+
+
+
+
+
+
+
+
+
+
+7.#include<iostream>
+using namespace std;
+int main()
+{
+	int n,rem=0,rev=0,org;
+	cout<<"Enter  a number :";
+	cin>>n;
+	org=n;
+	while (n != 0) {
+        rem = n % 10;
+        rev= rev * 10 + rem;
+        n /= 10;
+    }
+
+
+    if (org == rev)
+        cout<<org<<" is a palindrome.";
+    else
+       cout<<org<<" is not a palindrome.";
+
+    return 0;
+}
+
+
+thankyou....!!
