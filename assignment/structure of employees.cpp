@@ -1,6 +1,7 @@
 //structure of employee 
 #include<iostream>
 using namespace std;
+void funct(int n);
 struct Employee
 {
    
@@ -11,9 +12,15 @@ struct Employee
 
 int main()
 {
-    int i, n; 
+	int  n; 
  cout<<"\nEnter The Number of Employee\n\n";
  cin>>n;
+funct(n);
+}
+	
+void funct(int n)
+{
+ int i;  
  Employee Emp[n];
  
     for(i=0;i<n;i++)
@@ -41,8 +48,7 @@ int main()
  for(i=0;i<n;i++)
     {
      
-     cout <<"\n" << Emp[i].Name <<"\n"<< Emp[i].Age<<"\n"<< Emp[i].desig<<"\n";
+     cout <<"\nName :" << Emp[i].Name <<"\nAge:"<< Emp[i].Age<<"\nDesignation:"<< Emp[i].desig<<"\n";
     }
  
 }
-
