@@ -22,7 +22,7 @@ for(i=0;i<size;i++)
 		cout<<"smallest element is : "<<s;
 	return 0;
 }
-//finding smallest number
+//finding largest number
 int large(int ar[],int size)
 {
 int large,i;
@@ -38,7 +38,7 @@ return large;
 }	
 
 
-//finding largest number 
+//finding smallest number 
 int small(int ar[],int size)
 {
  int small=ar[0],i;
