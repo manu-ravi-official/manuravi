@@ -1,0 +1,58 @@
+#include<iostream>
+using namespace std;
+class prime
+{
+	int a,k,i;
+public:
+prime();
+~prime();
+void getnum();
+void calculate();
+
+};
+ prime::prime()
+{
+	cout<<"Object is Created "<<endl;
+}
+void prime:: getnum()
+{
+	cout<<endl<<"Enter Number : ";
+
+	cin>>a;
+
+}
+void prime::calculate()
+{
+	int k;
+for(int i=2;i<=a/2;i++)
+{
+if(a%i==0)
+{
+k=0;
+break;
+}
+else
+{
+k=1;
+}
+}
+if(k==0)
+	cout<<a<<" is not a prime number"<<endl;
+else
+	cout<<a<<" is  a prime number"<<endl;	
+}
+
+prime::~prime()
+{
+	cout<<endl<<"Object is deleted ";
+}
+
+int main()
+{
+prime prime;
+prime.getnum();
+prime.calculate();
+
+
+return 0;
+    }
