@@ -1,0 +1,34 @@
+#include<iostream>
+using namespace std;
+class complexno
+{
+int real,imag;
+public:
+void getdata()
+{
+cout<<"enter real part : ";
+cin>>real;
+cout<<"enter imaginary part : ";
+cin>>imag;
+}
+complexno  operator++(int )
+{
+	complexno num;
+real=real+1;
+imag=imag+1;		
+
+}
+void display()
+{
+cout<<"Result is "<<real<<"+"<<imag<<"i";
+}
+};
+
+int main()
+{
+complexno num;
+num.getdata();
+num++;
+num.display();
+return 0;
+}
