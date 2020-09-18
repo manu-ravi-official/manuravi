@@ -16,12 +16,16 @@ complexno  operator++(int )
 	complexno num;
 real=real+1;
 imag=imag+1;		
-
+cout<<"Result of increment is "<<real<<"+"<<imag<<"i";
 }
-void display()
+complexno  operator--(int )
 {
-cout<<"Result is "<<real<<"+"<<imag<<"i";
+	complexno num;
+real=real-2;
+imag=imag-2;		
+cout<<endl<<"Result of decrement is "<<real<<"+"<<imag<<"i";
 }
+
 };
 
 int main()
@@ -29,6 +33,7 @@ int main()
 complexno num;
 num.getdata();
 num++;
-num.display();
+num--;
+
 return 0;
 }
