@@ -6,6 +6,7 @@ class time
 int hour, minute,second;
 public:
 void getdata()
+
 {
 cout<<"enter hour : ";
 cin>>hour;
@@ -38,7 +39,6 @@ void display()
 cout<<hour<<":"<<minute<<":"<<second;
 }
 };
-
 int main()
 {
 time c1, c2, c3;
@@ -58,4 +58,7 @@ cout<<"\nsum of 2 times : ";
 c3.display();
 return 0;
 }
+
+
+
 
