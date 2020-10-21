@@ -1,0 +1,42 @@
+#include<iostream>
+using namespace std;
+class no
+{
+int num,inc;
+public:
+void getdata()
+{
+cout<<"enter number : ";
+cin>>num;
+}
+void operator++(int)
+{
+num=num+1;		
+
+}
+void displayIncrement()
+{
+cout<<"Incremented value is  "<<num;
+}
+void operator--(int)
+{
+num=num-1;		
+}
+void displayDecrement()
+{
+cout<<"\nDecremented value is  "<<num;
+}
+};
+
+int main()
+{
+no num;
+num.getdata();
+num++;
+num.displayIncrement();
+
+num--;
+
+num.displayDecrement();
+return 0;
+}
