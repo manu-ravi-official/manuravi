@@ -1,0 +1,50 @@
+#include <iostream>
+using namespace std;
+
+class Complex
+{
+    private:
+      int real,imag;
+    public:
+
+       void input()
+       {
+           cout << "Enter real part : ";
+           cin >> real;
+           cout << "Enter imaginary part : ";
+           cin >> imag;
+       }
+
+       // Operator overloading
+       Complex operator - (Complex c2)
+       {
+           Complex temp;
+           temp.real = real - c2.real;
+           temp.imag = imag - c2.imag;
+
+           return temp;
+       }
+
+       void output()
+       {
+          
+               cout << "\nResult = " << real << "+" << imag << "i";
+       }
+};
+
+int main()
+{
+    Complex c1, c2, result;
+
+    cout<<"Enter first complex number:\n";
+    c1.input();
+
+    cout<<"\nEnter second complex number:\n";
+    c2.input();
+
+
+    result = c1 - c2;
+    result.output();
+   
+    return 0;
+}
