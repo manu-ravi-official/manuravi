@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+class fact
+{
+	int num,f;
+	public:
+	void factor()
+	{
+		f=1;
+		cout<<"Enter the Number : ";
+		cin>>num;
+		for(int i=1;i<=num;i++)
+		{
+		f=f*i;
+	}
+		cout<<"Factorial  is : "<<f;
+}};
+int main()
+{
+	fact fa;
+	fa. factor();
+	return 0;
+}
+	
